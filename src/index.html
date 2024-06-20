@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tetris</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     
 </head>
 <body class="bg-neutral-900">
-    <div class="flex flex-col justify-center h-screen items-center space-y-36 ">
-        <h1 class="text-neutral-50 font-Pixel text-9xl">Tetris</h1>
-        <button class="text-neutral-900 bg-neutral-50 px-20 py-3 font-Pixel  text-4xl">PLAY</button>
+    <table class="z-0 absolute top-0 left-0 w-full h-full" id="tetrisFalling"></table>
+    <div class="z-10 absolute top-0 left-0 w-full h-full m-0 backdrop-blur-sm" id="Blur"></div>
+    <div class="flex flex-col justify-center h-screen items-center space-y-36">
+        <h1 class="text-neutral-50 font-Pixel text-9xl z-20">Tetris</h1>
+        <button class="text-neutral-50 px-20 py-3 font-Pixel text-6xl z-20">PLAY</button>
     </div>
-
+    <script src="/src/background/background.js"></script>
 </body>
 </html>
